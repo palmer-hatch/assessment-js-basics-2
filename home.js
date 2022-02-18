@@ -121,12 +121,20 @@ const deals = [
     to replace the 15 with a 10.
 */
 
+// const titleReplace = deals.forEach(element=> element['title'].replace('15','10' ){
+//     return element
+// }
 
-// deals.forEach((e )=> {
-//     deals.replace(10,15)
-// })
+    
 
-// console.log(deals)
+//   console.log(titleReplace)
+    
+    deals[0].title = deals[0].title.replace(15,10)
+console.log(deals[0]['title'])
+    
+
+
+
 
 /*
     The restaurant is going to continue its
@@ -141,6 +149,6 @@ const deals = [
     to be displaying wrong on the live site.
 */
 
-myDeal = deals.filter(e=> e.replace(10,15))
+// myDeal = deals.filter(e=> e.replace(10,15))
 
-console.log(myDeal)
+// console.log(myDeal)

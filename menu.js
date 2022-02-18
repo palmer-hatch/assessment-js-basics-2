@@ -160,6 +160,12 @@ const filteredFood = foodArr.filter(element => element.tags.includes("fruity"))
 
 console.log(filteredFood)
 
+
+
+const filterFood foodArr.filter((item) => {
+    return item.tags.include("peperoni")
+}
+
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
@@ -192,14 +198,25 @@ console.log(filteredFood)
         if it is, return objects whose value for the given
         property is greater than the `number` passed in
 
-        If the type isn't `below`, return objects whose
+        If the type is `below`, return objects whose
         value for the given property is less than the 
         `number` passed in
     
     Return the filtered array from the entire function
 */
 
-let filterByProperty = (property, number, type)
+filterByProperty("price", 20, "below")
+
+
+function filterByProperty = (property, number, type)=> {
+    filtered - foodArr.filter((element)=>
+    if (type === "above"){
+        if(element[property]  >number){
+
+        }
+    }
+    return filtered
+})
 
 
 /*
