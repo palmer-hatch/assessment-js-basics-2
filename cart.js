@@ -35,9 +35,9 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.filter(cart => cart.price).reduce((acc,curr) => acc + curr.price, 0)
 
-
+console.log(summedPrice)
 //////////////////PROBLEM 2////////////////////
 /*  
     Write a function called `calcFinalPrice` that
@@ -53,7 +53,11 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+let calcFinalPrice = (cartTotal, couponValue, tax) =>{
+    newCartTotal = cartTotal - (cartTotal * (tax +1))
+    newNewCartTotal = newCartTotal - couponValue
+    return newNewCartTotal
+}
 
 
 
@@ -78,7 +82,12 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+    You would need:
+     name in a string- so that you can search strings or match strings to previous orders
+    age - number data type so that way you can check if they could order alchol or to see what age groups like
+    Area code - number data type - to see if they can deliver that order to the person
+    email - so they can respond if something bad happens. String so you can manipulate whether or not your customers have gmail accounts to do add targeting
+
 
 */
 
@@ -87,4 +96,9 @@ const cart = [
     guidelines.
 */
 
-//CODE HERE
+let customer = {
+    name : "Palmer",
+    age : 25,
+    areacode: 84108,
+    email : "palmermexico@gmail.com"
+}

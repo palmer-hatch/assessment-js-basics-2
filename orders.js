@@ -29,9 +29,19 @@
     stored on the object.
 */
 
-//CODE HERE
+class Ticket{
+    constructor(item, orderTime, customerId, status){
+    this.item = item
+    this.orderTime = orderTime
+    this.customerId = customerId
+    this.status = status
+}updateStatus(newStatus) {
+    newStatus = this.status
+    console.log(`the order for customer ${this.customerId} is now ${this.status}`)
+}
+}
 
-
+console.log(Ticket)
 
 /*
     Create a new instance of your class.
@@ -44,7 +54,7 @@
     customer: 575
 */
 
-//CODE HERE
+
 
 
 /*

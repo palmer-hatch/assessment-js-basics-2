@@ -30,7 +30,15 @@
     'kids'
 */
 
-//CODE HERE
+const pizza = {
+    name : "pepaarooni",
+    price : 15,
+    category : "appetizer",
+    popularity : 10,
+    rating : 5,
+    tags : ["cheesy", "meaty"]
+
+}
 
 
 
@@ -42,7 +50,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
+// console.log(pizza.popularity)
 
 
 /*
@@ -52,7 +60,7 @@
     get the value.
 */
 
-//CODE HERE
+// console.log(pizza.tags[1])
 
 
 /*
@@ -62,8 +70,9 @@
     Print the value of your new price variable.
 */
 
-//CODE HERE
+let {price} = pizza
 
+// console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -72,9 +81,9 @@
     Print the value of your category variable. 
 */
 
-//CODE HERE
+let {category} = pizza
 
-
+// console.log(category)
 //////////////////PROBLEM 3////////////////////
 /* 
     Create an array with about 5 objects in it.
@@ -87,7 +96,48 @@
     data in some functions that you'll write.
 */
 
-//CODE HERE
+let foodArr = [
+    {
+        name : "cheese",
+        price : 5,
+        category : "entree",
+        popularity : 1,
+        rating : 10,
+        tags : ["cheesy", "vegetarian"] 
+    },
+    {
+        name : "oreo pizza",
+    price : 15,
+    category : "dessert",
+    popularity : 15,
+    rating : 25,
+    tags : ["chocolatey", "creamy"]
+    },
+    {
+        name : "vegetarian",
+    price : 15,
+    category : "entre",
+    popularity : 20,
+    rating : 7,
+    tags : ["veggies", "vegan"]
+    },
+    {
+        name : "Meatlovers",
+    price : 20,
+    category : "appetizer",
+    popularity : 10,
+    rating : 16,
+    tags : ["lots of meat", "meatatist"]
+    },
+    {
+        name : "hawaiian",
+    price : 17,
+    category : "entre",
+    popularity : 3,
+    rating : 9,
+    tags : ["hammy", "fruity"]
+    }
+]
 
 
 
@@ -105,9 +155,10 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(element => element.tags.includes("fruity"))
+    
 
-
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -148,7 +199,7 @@
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+let filterByProperty = (property, number, type)
 
 
 /*
