@@ -42,14 +42,14 @@ class Employee {
     shifts: weekday mornings, weekday afternoons
 */
 
-//CODE HERE
+let empOne = new Employee ('Jess', "weekday mornings, weekday afternoons")
 
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
-//CODE HERE
+empOne.getSchedule()
 
 
 /*
@@ -64,7 +64,7 @@ class Employee {
     dot or bracket notation.
 */
 
-//CODE HERE
+let empTwo = [...empOne]
 
 
 
@@ -91,7 +91,13 @@ class Employee {
     the employees array. 
 */
 
-//CODE HERE
+class Manager extends Employee{
+    constructor(name, shifts, employees){
+        super(name, shifts)
+        this.employees = employees
+    } getEmployees = (underNeath) => console.log(`${this.name} manages ${this.employees}`)
+    addEmployee = (emp) => this.employees.push(emp)
+}
 
 
 
@@ -106,7 +112,7 @@ class Employee {
     employees: Cece and Schmidt
 */
 
-//CODE HERE
+let manage1 = new Manager ("winstion", "weekday mornings", "weekday afternoons", "cece and Schmidt")
 
 
 /*
@@ -114,7 +120,7 @@ class Employee {
     `manager` object.  
 */
 
-//CODE HERE
+manage1.getEmployees()
 
 /*
     Call the `addEmployee` method on the 
@@ -122,7 +128,7 @@ class Employee {
     'Coach' or whatever name you'd like.
 */
 
-//CODE HERE 
+manage1.addEmployee("coach")
 
 /*
     Call the `getEmployees` method on the
@@ -130,4 +136,4 @@ class Employee {
     that an employee was added.
 */
 
-//CODE HERE
+manage1.getEmployees()

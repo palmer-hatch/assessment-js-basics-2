@@ -208,7 +208,7 @@ const filterFood foodArr.filter((item) => {
 filterByProperty("price", 20, "below")
 
 
-function filterByProperty = (property, number, type)=> {
+function filterByProperty  (property, number, type) {
     filtered - foodArr.filter((element)=>
     if (type === "above"){
         if(element[property]  >number){
@@ -226,4 +226,4 @@ function filterByProperty = (property, number, type)=> {
     You'll have to console.log to see the filtered array
 */
 
-//CODE HERE
+filterByProperty("detroit",313, "complex")

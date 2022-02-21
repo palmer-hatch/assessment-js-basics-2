@@ -54,7 +54,7 @@ console.log(Ticket)
     customer: 575
 */
 
-
+let firstTicket = new Ticket ("peparroni", 30, 4451, "initialized")
 
 
 /*
@@ -62,5 +62,4 @@ console.log(Ticket)
     `firstTicket` passing in the string
     'cooking'
 */
-
-//CODE HERE
+updateStatus(firstTicket("cooking"))
